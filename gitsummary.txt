@@ -1,0 +1,32 @@
+=============================================================================================
+2019_09_27  git教程
+删除文件夹操作：
+第一步：查看当前目录           -->pwd
+第二步：查看当前目录有哪些文件 -->ls(或者是ls -ah)【ls -ah能够查看隐藏的文件夹】
+第三步：删除文件夹             -->rm -rf 文件夹名称 【示例:rm -rf web/】删除web文件夹及其文件
+==============================================================================================
+2018_09_27   git 教程（步骤）
+$git checkout -b dev           --> 创建并切换分支到dev
+   等同于：$git branch dev     -->创建dev分支
+           $git checkout dev   -->切换到分支dev
+
+
+$git checkout master           -->切换回分支master
+$git merge dev                 -->把master分支合并到分支dev上
+$git branch -d dev             -->删除dev分支
+===============================================================================================
+2018_09_28 git 错误提示解决办法
+Administrator@USER-20180402RN MINGW32 /c/wamp/www (master)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+Administrator@USER-20180402RN MINGW32 /c/wamp/www (dev)
+$ git branch                                                          -->查看不了当前有哪些分支
+
+Administrator@USER-20180402RN MINGW32 /c/wamp/www (dev)
+$ git checkout master                                                 --> 切换不了master分支
+error: pathspec 'master' did not match any file(s) known to git
+
+解决方案：
+（该方法是自己实践所得   当我们切换不回master分支时，这时候只需执行$ git checkout -b master   即重新创建并切换master分支）
+================================================================================================
